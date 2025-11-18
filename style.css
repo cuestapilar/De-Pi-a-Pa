@@ -1,0 +1,188 @@
+/* Variables de Color (para un look suave y blanquero) */
+:root {
+    --color-primary: #5a7d7d; /* Verde azulado suave (principal) */
+    --color-secondary: #f4e9d5; /* Crema/Beige (fondo claro) */
+    --color-text: #333;
+    --color-light: #fff;
+    --color-accent: #e5b97d; /* Tostado (acento) */
+}
+
+/* Reset y Estilos Base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: var(--color-text);
+    background-color: var(--color-secondary);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+/* --- Cabecera y Navegación --- */
+.header {
+    background-color: var(--color-light);
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+.nav a {
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: var(--color-accent);
+}
+
+#cart-button {
+    background: var(--color-accent);
+    color: var(--color-light);
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+/* --- Banner Principal (Hero) --- */
+.hero {
+    background: var(--color-primary);
+    color: var(--color-light);
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background: var(--color-accent);
+    color: var(--color-light);
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #d1a56c; /* Tostado más oscuro */
+}
+
+/* --- Productos --- */
+.products-container {
+    padding: 50px 5%;
+    text-align: center;
+}
+
+.products-container h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: var(--color-primary);
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.product-card {
+    background: var(--color-light);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 1.3em;
+    margin-bottom: 5px;
+    color: var(--color-primary);
+}
+
+.product-card p.price {
+    font-weight: bold;
+    color: var(--color-accent);
+    margin-bottom: 15px;
+}
+
+.add-to-cart-btn {
+    background: var(--color-primary);
+    color: var(--color-light);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #4c6868;
+}
+
+/* --- Otras Secciones y Pie de Página --- */
+.about, .footer {
+    text-align: center;
+    padding: 50px 5%;
+}
+
+.about {
+    background-color: #f0f0f0;
+}
+
+.about h2 {
+    color: var(--color-primary);
+    margin-bottom: 15px;
+}
+
+.footer {
+    background-color: var(--color-text);
+    color: var(--color-light);
+    padding: 20px 5%;
+}
+
+.footer a {
+    color: var(--color-secondary);
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    color: var(--color-accent);
+}
